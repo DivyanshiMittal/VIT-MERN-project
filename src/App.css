@@ -1,0 +1,174 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background: url('https://www.freepik.com/free-vector/dark-wavy-colors-background_6600674.htm#query=login%20background&position=7&from_view=keyword&track=ais_hybrid&uuid=9d4cfd95-7218-4f8e-ae70-988e425837e3') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.dashboard {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.dashboard button {
+  padding: 10px 20px;
+  background-color: #051e38;
+  border: none;
+  border-radius: 5px;
+  color: rgb(232, 246, 244);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dashboard button:hover {
+  background-color: #14375c;
+}
+
+.sign-up-container {
+  background: rgba(55, 69, 94, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  width: 400px;
+  text-align: center;
+  animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.sign-up-image {
+  width: 50%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  animation: bounceIn 1.5s;
+}
+
+@keyframes bounceIn {
+  0% {
+      transform: scale(0.5);
+      opacity: 0;
+  }
+  60% {
+      transform: scale(1.2);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #fff;
+  animation: fadeIn 2s ease-in;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #23abdc;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #23abdc;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #87daef;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .dashboard {
+      position: static;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 20px;
+  }
+
+  .dashboard button {
+      font-size: 14px;
+      padding: 8px 15px;
+  }
+
+  .sign-up-container {
+      padding: 15px;
+  }
+
+  .sign-up-image {
+      width: 70%;
+      margin-bottom: 15px;
+  }
+
+  h1 {
+      font-size: 24px;
+  }
+
+  input {
+      padding: 8px;
+  }
+
+  button {
+      padding: 8px;
+      font-size: 14px;
+  }
+}
